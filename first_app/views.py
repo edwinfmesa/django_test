@@ -1,2 +1,13 @@
-# Create your views here.
-    # esto hace las veces del controlador
+#from django.template.loader import get_template
+#from django.template import Context
+#from django.http import HttpResponse
+
+#from index.models import Comment
+
+from django.shortcuts import render_to_response
+
+#import datetime
+
+
+def mostrar(request):
+    return render_to_response('prueba.html', None)
