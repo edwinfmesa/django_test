@@ -6,6 +6,9 @@ class comentarios(models.Model):
     fecha = models.DateTimeField()
     texto = models.TextField(blank = True)
     hola ="hola mundo" 
+    
+    def __unicode__(self):
+        return "%s "%(self.titulo)
 
    
     
