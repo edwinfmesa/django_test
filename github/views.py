@@ -8,6 +8,6 @@ import os
 def update(solicitud):
     os.chdir(os.path.dirname(os.path.dirname(__file__)))
 
-    gitpull = commands.getstatusoutput('git pull')[1]
+    gitpull = commands.getstatusoutput('git pull origin master')[1]
 
     return HttpResponse(gitpull)
